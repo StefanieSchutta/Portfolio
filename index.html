@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Echoes of Adventures — Travel Photography by Steffi Schutta. Authentic storytelling for hotels, travel brands and tourism boards." />
+  <meta property="og:title" content="Echoes of Adventures · Travel Photography" />
+  <meta property="og:description" content="Authentic travel photography for brand collaborations." />
+  <meta property="og:type" content="website" />
+  <title>Echoes of Adventures · Travel Photography</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip link for keyboard / screen-reader users -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ═══════════════════════════════════════════
+       NAV
+  ════════════════════════════════════════════ -->
+  <header>
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Travel Photography by Stefanie Schutta — home">
+        Travel Photography by Stefanie Schutta
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#gallery"   data-en="Work"        data-de="Arbeit">Work</a></li>
+        <li><a href="#about"     data-en="About"       data-de="Über mich">About</a></li>
+        <li><a href="#collaborate" data-en="Collaborate" data-de="Kollaboration">Collaborate</a></li>
+        <li><a href="#contact"   data-en="Contact"     data-de="Kontakt">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a
+          href="#contact"
+          class="nav-cta"
+          data-en="Get in touch"
+          data-de="Anfragen"
+        >Get in touch</a>
+
+        <button
+          id="lang-toggle"
+          class="btn-lang"
+          aria-label="Switch language"
+          type="button"
+        >DE</button>
+
+        <button
+          id="hamburger"
+          class="btn-hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div
+    id="mobile-nav"
+    class="mobile-nav"
+    role="dialog"
+    aria-label="Navigation menu"
+    aria-modal="true"
+  >
+    <button id="mobile-nav-close" class="mobile-nav-close" aria-label="Close menu" type="button">
+      &#x2715;
+    </button>
+
+    <a href="#gallery"     class="mobile-nav-link" data-en="Work"          data-de="Arbeit">Work</a>
+    <a href="#about"       class="mobile-nav-link" data-en="About"         data-de="Über mich">About</a>
+    <a href="#collaborate" class="mobile-nav-link" data-en="Collaborate"   data-de="Kollaboration">Collaborate</a>
+    <a href="#contact"     class="mobile-nav-link" data-en="Contact"       data-de="Kontakt">Contact</a>
+    <a href="#contact"     class="mobile-nav-link" style="font-size:14px;letter-spacing:0.14em;margin-top:8px;" data-en="Get in touch →" data-de="Anfragen →">Get in touch →</a>
+
+    <button id="mobile-lang" class="mobile-lang-toggle btn-lang" onclick="toggleLanguage()" type="button">DE</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN
+  ════════════════════════════════════════════ -->
+  <main id="main">
+
+    <!-- ──────────────────────────────────────
+         HERO SLIDER
+    ─────────────────────────────────────── -->
+    <section id="hero" class="hero" aria-label="Hero slideshow">
+
+      <!-- Slides are injected by JS from HERO_SLIDES config in main.js -->
+      <div id="hero-slides" class="hero-slides" aria-hidden="true"></div>
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <h1
+          class="hero-title"
+          data-en="Travel Photography for Authentic Storytelling"
+          data-de="Reisefotografie für authentisches Storytelling"
+        >
+          Travel Photography for Authentic Storytelling
+        </h1>
+      </div>
+
+      <!-- Dots + progress bar -->
+      <div id="hero-dots" class="hero-dots" role="tablist" aria-label="Slides"></div>
+      <div id="hero-progress" class="hero-progress" role="progressbar" aria-hidden="true"></div>
+
+      <!-- Slide arrows -->
+      <button class="hero-arrow hero-arrow--prev" id="hero-prev" aria-label="Previous slide" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M10 2L4 8l6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="hero-arrow hero-arrow--next" id="hero-next" aria-label="Next slide" type="button">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+          <path d="M6 2l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+    </section>
+
+
+    <!-- ──────────────────────────────────────
+         GALLERY
+    ─────────────────────────────────────── -->
+    <section id="gallery" class="section" aria-labelledby="gallery-heading">
+      <div class="container">
+
+        <span
+          id="gallery-heading"
+          class="section-eyebrow"
+          data-en="Selected Work"
+          data-de="Ausgewählte Arbeiten"
+        >Selected Work</span>
+
+        <!-- Filter tabs -->
+        <div
+          class="gallery-filters"
+          role="group"
+          aria-label="Filter gallery by category"
+        >
+          <button class="filter-btn is-active" data-filter="all"
+                  aria-pressed="true"
+                  data-en="All" data-de="Alle">All</button>
+
+          <button class="filter-btn" data-filter="landscape"
+                  aria-pressed="false"
+                  data-en="Landscapes" data-de="Landschaften">Landscapes</button>
+
+          <button class="filter-btn" data-filter="people"
+                  aria-pressed="false"
+                  data-en="People" data-de="Menschen">People</button>
+
+          <button class="filter-btn" data-filter="urban"
+                  aria-pressed="false"
+                  data-en="Urban" data-de="Urban">Urban</button>
+
+          <button class="filter-btn" data-filter="animals"
+                  aria-pressed="false"
+                  data-en="Animals" data-de="Tiere">Animals</button>
+        </div>
+
+        <!-- Gallery grid — populated by JS from GALLERY config in main.js -->
+        <div
+          id="gallery-grid"
+          class="gallery-grid"
+          role="list"
+          aria-label="Photo gallery"
+        ></div>
+
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────
+         ABOUT (Talva-style split)
+    ─────────────────────────────────────── -->
+    <section id="about" class="section about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-inner">
+
+          <!-- Left: photo -->
+          <div class="about-image-col">
+            <div
+              class="about-image"
+              style="background-image: url('images/about.jpg');"
+              role="img"
+              aria-label="Steffi Schutta, travel photographer"
+            ></div>
+          </div>
+
+          <!-- Right: text -->
+          <div class="about-text-col">
+
+            <span
+              class="about-eyebrow"
+              data-en="About"
+              data-de="Über mich"
+            >About</span>
+
+            <h2
+              id="about-heading"
+              class="about-name"
+              data-en="Steffi Schutta"
+              data-de="Steffi Schutta"
+            >Steffi Schutta</h2>
+
+            <p
+              class="about-bio"
+              data-en="I'm a Berlin-based travel photographer chasing light in the world's most extraordinary corners. My work lives at the intersection of editorial clarity and raw, unfiltered moments — no heavy retouching, no staged scenes. Just places as they are."
+              data-de="Ich bin eine Berliner Reisefotografin, die das Licht in den außergewöhnlichsten Ecken der Welt einfängt. Meine Arbeit lebt an der Schnittstelle von redaktioneller Klarheit und unverfälschten Momenten — ohne schwere Bearbeitung, ohne gestellte Szenen. Einfach Orte, wie sie wirklich sind."
+            >I'm a Berlin-based travel photographer chasing light in the world's most extraordinary corners. My work lives at the intersection of editorial clarity and raw, unfiltered moments — no heavy retouching, no staged scenes. Just places as they are.</p>
+
+            <div class="about-divider" aria-hidden="true"></div>
+
+            <dl class="about-meta">
+              <div class="about-meta-row">
+                <dt class="about-meta-key"
+                    data-en="Base"
+                    data-de="Standort">Base</dt>
+                <dd class="about-meta-val"
+                    data-en="Berlin, Germany"
+                    data-de="Berlin, Deutschland">Berlin, Germany</dd>
+              </div>
+              <div class="about-meta-row">
+                <dt class="about-meta-key"
+                    data-en="Style"
+                    data-de="Stil">Style</dt>
+                <dd class="about-meta-val"
+                    data-en="Editorial · Authentic"
+                    data-de="Redaktionell · Authentisch">Editorial · Authentic</dd>
+              </div>
+              <div class="about-meta-row">
+                <dt class="about-meta-key"
+                    data-en="Destinations"
+                    data-de="Destinationen">Destinations</dt>
+                <dd class="about-meta-val"
+                    data-en="Bali · Morocco · Iceland · Galápagos · New Zealand +"
+                    data-de="Bali · Marokko · Island · Galápagos · Neuseeland +">Bali · Morocco · Iceland · Galápagos · New Zealand +</dd>
+              </div>
+              <div class="about-meta-row">
+                <dt class="about-meta-key"
+                    data-en="Shop"
+                    data-de="Shop">Shop</dt>
+                <dd class="about-meta-val">
+                  <a
+                    href="https://www.etsy.com/shop/EchoesOfAdventures"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    data-en="Etsy — Prints &amp; Digital Products"
+                    data-de="Etsy — Prints &amp; Digitale Produkte"
+                  >Etsy — Prints &amp; Digital Products</a>
+                </dd>
+              </div>
+            </dl>
+
+          </div><!-- /about-text-col -->
+        </div><!-- /about-inner -->
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────
+         COLLABORATE
+    ─────────────────────────────────────── -->
+    <section id="collaborate" class="section" aria-labelledby="collaborate-heading">
+      <div class="container">
+        <div class="collaborate-inner">
+
+          <!-- Sticky intro -->
+          <div class="collaborate-intro">
+            <span
+              class="section-eyebrow"
+              data-en="Work with me"
+              data-de="Zusammenarbeit"
+            >Work with me</span>
+
+            <h2
+              id="collaborate-heading"
+              class="collaborate-heading"
+              data-en="Let's create something worth sharing."
+              data-de="Lass uns etwas erschaffen, das es wert ist, geteilt zu werden."
+            >Let's create something worth sharing.</h2>
+
+            <p
+              class="collaborate-sub"
+              data-en="I work with a select number of brands per year — prioritising long-term partnerships where authenticity is non-negotiable."
+              data-de="Ich arbeite jedes Jahr mit einer ausgewählten Anzahl von Marken — mit Fokus auf langfristige Partnerschaften, bei denen Authentizität nicht verhandelbar ist."
+            >I work with a select number of brands per year — prioritising long-term partnerships where authenticity is non-negotiable.</p>
+
+            <a
+              id="collab-cta"
+              href="#contact"
+              class="btn-primary"
+              data-en="Get in touch"
+              data-de="Jetzt anfragen"
+            >Get in touch</a>
+          </div>
+
+          <!-- Collaboration types -->
+          <div class="collab-types" role="list">
+
+            <article class="collab-item" role="listitem">
+              <span class="collab-num" aria-hidden="true">01</span>
+              <div>
+                <h3
+                  class="collab-name"
+                  data-en="Hotels &amp; Accommodations"
+                  data-de="Hotels &amp; Unterkünfte"
+                >Hotels &amp; Accommodations</h3>
+                <p
+                  class="collab-desc"
+                  data-en="Editorial photography for boutique hotels, eco-lodges and unique stays — images built to be published, not just posted."
+                  data-de="Redaktionelle Fotografie für Boutique-Hotels, Öko-Lodges und besondere Unterkünfte — Bilder, die zur Veröffentlichung geschaffen sind."
+                >Editorial photography for boutique hotels, eco-lodges and unique stays — images built to be published, not just posted.</p>
+              </div>
+            </article>
+
+            <article class="collab-item" role="listitem">
+              <span class="collab-num" aria-hidden="true">02</span>
+              <div>
+                <h3
+                  class="collab-name"
+                  data-en="Travel Gear &amp; Outdoor Brands"
+                  data-de="Travel Gear &amp; Outdoor-Brands"
+                >Travel Gear &amp; Outdoor Brands</h3>
+                <p
+                  class="collab-desc"
+                  data-en="Your gear, in the field. Real locations, real conditions — not a studio. High-res assets for campaigns, web and social."
+                  data-de="Dein Equipment, im Einsatz. Echte Orte, echte Bedingungen — kein Studio. Hochauflösende Bilder für Kampagnen, Web und Social Media."
+                >Your gear, in the field. Real locations, real conditions — not a studio. High-res assets for campaigns, web and social.</p>
+              </div>
+            </article>
+
+            <article class="collab-item" role="listitem">
+              <span class="collab-num" aria-hidden="true">03</span>
+              <div>
+                <h3
+                  class="collab-name"
+                  data-en="Tourism Boards &amp; Destinations"
+                  data-de="Tourismus-Boards &amp; Destinationen"
+                >Tourism Boards &amp; Destinations</h3>
+                <p
+                  class="collab-desc"
+                  data-en="Destination stories that move people to book. Photography and visual content that shows a place honestly and beautifully."
+                  data-de="Destinationsgeschichten, die Menschen zum Buchen bewegen. Fotografie und visueller Content, der einen Ort ehrlich und schön zeigt."
+                >Destination stories that move people to book. Photography and visual content that shows a place honestly and beautifully.</p>
+              </div>
+            </article>
+
+          </div><!-- /collab-types -->
+        </div><!-- /collaborate-inner -->
+      </div>
+    </section>
+
+
+    <!-- ──────────────────────────────────────
+         CONTACT
+    ─────────────────────────────────────── -->
+    <section id="contact" class="section contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <h2
+          id="contact-heading"
+          class="contact-headline"
+          data-en="Say hello."
+          data-de="Melde dich."
+        >Say hello.</h2>
+
+        <p
+          class="contact-sub"
+          data-en="Tell me what you're working on — I'll get back to you within two days."
+          data-de="Erzähl mir, woran du arbeitest — ich melde mich innerhalb von zwei Tagen."
+        >Tell me what you're working on — I'll get back to you within two days.</p>
+
+        <!--
+          ┌─────────────────────────────────────────────────────────┐
+          │  FORMSPREE SETUP (one-time, takes 2 minutes)           │
+          │                                                         │
+          │  1. Go to https://formspree.io and create a free acct  │
+          │  2. Click "New Form", name it "Portfolio Contact"       │
+          │  3. Copy the 8-character form ID from the endpoint URL │
+          │     e.g. https://formspree.io/f/xyzabcde               │
+          │  4. Replace REPLACE_WITH_YOUR_ID below with that ID    │
+          │  5. Formspree sends form submissions to your email     │
+          │  6. First submission requires email confirmation        │
+          │                                                         │
+          │  Free plan: 50 submissions/month — plenty for now.     │
+          └─────────────────────────────────────────────────────────┘
+        -->
+        <form
+          id="contact-form"
+          class="contact-form"
+          action="https://formspree.io/f/REPLACE_WITH_YOUR_ID"
+          method="POST"
+          novalidate
+        >
+          <!-- Honeypot: bots fill this in, humans don't see it -->
+          <div class="form-trap" aria-hidden="true">
+            <label for="__trap">Leave this empty</label>
+            <input type="text" id="__trap" name="_gotcha" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <!-- Hidden: redirect after submission (Formspree will use AJAX instead) -->
+          <input type="hidden" name="_subject" value="New collaboration inquiry — Stefanie Schutta" />
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contact-name"
+                     data-en="Your name"
+                     data-de="Dein Name">Your name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                autocomplete="name"
+                required
+                data-en-placeholder="e.g. Anna Müller"
+                data-de-placeholder="z.B. Anna Müller"
+                placeholder="e.g. Anna Müller"
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-email"
+                     data-en="Your email"
+                     data-de="Deine E-Mail">Your email</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                autocomplete="email"
+                required
+                placeholder="hello@yourbrand.com"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-type"
+                   data-en="Type of collaboration"
+                   data-de="Art der Zusammenarbeit">Type of collaboration</label>
+            <select id="contact-type" name="collaboration_type">
+              <option value="" data-en="— Select —" data-de="— Auswählen —">— Select —</option>
+              <option value="Hotel / Accommodation"    data-en="Hotel / Accommodation"    data-de="Hotel / Unterkunft">Hotel / Accommodation</option>
+              <option value="Travel Gear / Outdoor Brand" data-en="Travel Gear / Outdoor Brand" data-de="Travel Gear / Outdoor-Brand">Travel Gear / Outdoor Brand</option>
+              <option value="Tourism Board / Destination" data-en="Tourism Board / Destination" data-de="Tourismus-Board / Destination">Tourism Board / Destination</option>
+              <option value="Other"                    data-en="Other"                    data-de="Sonstiges">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contact-message"
+                   data-en="What are you looking for?"
+                   data-de="Was suchst du?">What are you looking for?</label>
+            <textarea
+              id="contact-message"
+              name="message"
+              rows="5"
+              required
+              data-en-placeholder="Tell me about your project, vision, timeline, and what kind of imagery you need…"
+              data-de-placeholder="Erzähl mir von deinem Projekt, deiner Vision, dem Zeitraum und welche Art von Bildern du benötigst…"
+              placeholder="Tell me about your project, vision, timeline, and what kind of imagery you need…"
+            ></textarea>
+          </div>
+
+          <div class="form-bottom">
+            <button type="submit" class="btn-submit" id="form-submit-btn">
+              <span data-en="Send message →" data-de="Nachricht senden →">Send message →</span>
+            </button>
+            <p class="form-note"
+               data-en="Your details are used only to respond to your inquiry and never shared with third parties."
+               data-de="Deine Daten werden ausschließlich zur Beantwortung deiner Anfrage genutzt und nicht an Dritte weitergegeben.">
+              Your details are used only to respond to your inquiry and never shared with third parties.
+            </p>
+          </div>
+
+          <p id="form-error" class="form-error-msg" role="alert" hidden></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <span
+      data-en="© Stefanie Schutta · All rights reserved"
+      data-de="© Stefanie Schutta · Alle Rechte vorbehalten"
+    >© Stefanie Schutta · All rights reserved</span>
+
+    <div class="footer-links">
+      <a
+        href="https://www.etsy.com/shop/EchoesOfAdventures"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-en="Etsy Shop"
+        data-de="Etsy Shop"
+      >Etsy Shop</a>
+
+      <!-- Email is injected by JS to prevent scraping -->
+      <a id="footer-email" href="#contact"
+         data-en="Email" data-de="E-Mail">Email</a>
+
+      <a href="impressum.html" data-en="Impressum" data-de="Impressum">Impressum</a>
+      <a href="datenschutz.html" data-en="Privacy" data-de="Datenschutz">Privacy</a>
+
+      <button
+        onclick="toggleLanguage()"
+        class="btn-lang"
+        type="button"
+        aria-label="Toggle language"
+        data-en="DE"
+        data-de="EN"
+      >DE</button>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       LIGHTBOX
+  ════════════════════════════════════════════ -->
+  <div
+    id="lightbox"
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Photo lightbox"
+    aria-hidden="true"
+  >
+    <button id="lb-close" class="lb-btn" aria-label="Close lightbox" type="button">&#x2715;</button>
+    <button id="lb-prev"  class="lb-btn" aria-label="Previous photo" type="button">&#x2039;</button>
+    <button id="lb-next"  class="lb-btn" aria-label="Next photo"     type="button">&#x203A;</button>
+
+    <div
+      id="lb-img"
+      class="lb-img"
+      role="img"
+      aria-live="polite"
+    ></div>
+
+    <p id="lb-caption" class="lb-caption" aria-live="polite"></p>
+    <p id="lb-counter" class="lb-counter" aria-live="polite"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
