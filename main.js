@@ -38,7 +38,7 @@ const GALLERY = [
     file: 'gallery-bali.jpg',
     titleEN: 'Bali', titleDE: 'Bali',
     format: 'portrait',
-    categories: ['landscape', 'people'],
+    categories: ['people'],
     placeholder: '#C2A98A'
   },
   {
@@ -80,7 +80,7 @@ const GALLERY = [
     file: 'gallery-thai-market.jpg',
     titleEN: 'Thailand', titleDE: 'Thailand',
     format: 'landscape',
-    categories: ['urban', 'people'],
+    categories: ['people'],
     placeholder: '#7A9E8C'
   },
   {
