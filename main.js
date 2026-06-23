@@ -139,6 +139,20 @@ const GALLERY = [
     categories: ['people'],
     placeholder: '#8EB5C2'
   },
+    {
+    file: 'gallery-mallorca-coast.jpg',
+    titleEN: 'Mallorca, Spain', titleDE: 'Mallorca, Spain',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8DA4B4'
+  },
+   {
+    file: 'gallery-mallorca.jpg',
+    titleEN: 'Mallorca, Spain', titleDE: 'Mallorca, Spain',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8DA4B4'
+  },
 ];
 
 /* =============================================
