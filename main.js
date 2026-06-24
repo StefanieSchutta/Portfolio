@@ -140,7 +140,7 @@ const GALLERY = [
     placeholder: '#8EB5C2'
   },
     {
-    file: 'gallery--mallorca-coast.jpg',
+    file: 'gallery-mallorca-coast.jpg',
     titleEN: 'Spain', titleDE: 'Spain',
     format: 'landscape',
     categories: ['landscape'],
