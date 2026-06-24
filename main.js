@@ -38,7 +38,7 @@ const GALLERY = [
     file: 'gallery-bali.jpg',
     titleEN: 'Bali', titleDE: 'Bali',
     format: 'portrait',
-    categories: ['landscape', 'people'],
+    categories: ['people'],
     placeholder: '#C2A98A'
   },
   {
@@ -80,7 +80,7 @@ const GALLERY = [
     file: 'gallery-thai-market.jpg',
     titleEN: 'Thailand', titleDE: 'Thailand',
     format: 'landscape',
-    categories: ['urban', 'people'],
+    categories: ['people'],
     placeholder: '#7A9E8C'
   },
   {
@@ -133,10 +133,24 @@ const GALLERY = [
     placeholder: '#C8A07A'
   },
     {
-    file: 'gallery- traditional thai.jpg',
+    file: 'gallery-traditional thai.jpg',
     titleEN: 'Thailand', titleDE: 'Thailand',
     format: 'portrait',
     categories: ['people'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery--mallorca-coast.jpg',
+    titleEN: 'Spain', titleDE: 'Spain',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#C8A07A'
+  },
+    {
+    file: 'gallery-mallorca.jpg',
+    titleEN: 'Spain', titleDE: 'Spain',
+    format: 'landscape',
+    categories: ['landscape'],
     placeholder: '#8EB5C2'
   },
 ];
