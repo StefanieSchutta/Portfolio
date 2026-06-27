@@ -36,21 +36,21 @@ const HERO_SLIDES = [
 const GALLERY = [
   {
     file: 'gallery-bali.jpg',
-    titleEN: 'Bali', titleDE: 'Bali',
+    titleEN: 'Indonesia', titleDE: 'Indonesien',
     format: 'portrait',
     categories: ['people'],
     placeholder: '#C2A98A'
   },
   {
     file: 'gallery-rome.jpg',
-    titleEN: 'Rome', titleDE: 'Rom',
+    titleEN: 'Italy', titleDE: 'Italien',
     format: 'landscape',
     categories: ['urban'],
     placeholder: '#BA8C70'
   },
   {
     file: 'gallery-nyhavn.jpg',
-    titleEN: 'Nyhavn, Copenhagen', titleDE: 'Nyhavn, Kopenhagen',
+    titleEN: 'Copenhagen', titleDE: 'Kopenhagen',
     format: 'landscape',
     categories: ['urban'],
     placeholder: '#8DA4B4'
@@ -71,7 +71,7 @@ const GALLERY = [
   },
   {
     file: 'gallery-volcano.jpg',
-    titleEN: 'Galapagos', titleDE: 'Galapagos',
+    titleEN: 'Spain', titleDE: 'Spain',
     format: 'landscape',
     categories: ['landscape'],
     placeholder: '#C2A268'
@@ -94,7 +94,7 @@ const GALLERY = [
     file: 'gallery-chiang mai urban life.jpg',
     titleEN: 'Thailand', titleDE: 'Thailand',
     format: 'landscape',
-    categories: ['urban', 'people'],
+    categories: ['people'],
     placeholder: '#9CAAB5'
   },
   {
