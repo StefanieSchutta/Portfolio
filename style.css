@@ -709,7 +709,7 @@ button    { cursor: pointer; font-family: inherit; border: none; background: non
 
 .about-image {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4 / 4;
   background-size: cover;
   background-position: center top;
   background-color: #d0cbc4;      /* placeholder tint */
