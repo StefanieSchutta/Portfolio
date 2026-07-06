@@ -230,6 +230,13 @@ const GALLERY = [
     categories: ['landscape'],
     placeholder: '#8EB5C2'
   },
+   {
+    file: 'gallery-mexico city',
+    titleEN: 'Mexico', titleDE: 'Mexiko',
+    format: 'landscape',
+    categories: ['landscape','people'],
+    placeholder: '#8EB5C2'
+  },
 ];
 
 /* =============================================
