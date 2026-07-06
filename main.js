@@ -153,6 +153,83 @@ const GALLERY = [
     categories: ['landscape'],
     placeholder: '#8EB5C2'
   },
+   {
+    file: 'gallery-croatia cat.jpg',
+    titleEN: 'Croatia', titleDE: 'Kroatien',
+    format: 'landscape',
+    categories: ['animals'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-croatia island.jpg',
+    titleEN: 'Croatia', titleDE: 'Kroatien',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-croatia landscape.jpg',
+    titleEN: 'Croatia', titleDE: 'Kroatien',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-marrakesh blue man.jpg',
+    titleEN: 'Morocco', titleDE: 'Marokko',
+    format: 'portrait',
+    categories: ['people'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-marrakesh red man.jpg',
+    titleEN: 'Morocco', titleDE: 'Marokko',
+    format: 'portrait',
+    categories: ['people'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-spanish backyard.jpg',
+    titleEN: 'Spain', titleDE: 'Spanien',
+    format: 'portrait',
+    categories: ['urban'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-ronda spain.jpg',
+    titleEN: 'Spain', titleDE: 'Spanien',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-morroco surf.jpg',
+    titleEN: 'Morocco', titleDE: 'Marokko',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-superkilen1.jpg',
+    titleEN: 'Denmark', titleDE: 'Dänemark',
+    format: 'portrait',
+    categories: ['urban'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-superkilen2.jpg',
+    titleEN: 'Denmark', titleDE: 'Dänemark',
+    format: 'portrait',
+    categories: ['urban'],
+    placeholder: '#8EB5C2'
+  },
+    {
+    file: 'gallery-thailand beach.jpg',
+    titleEN: 'Thailand', titleDE: 'Thailand',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
 ];
 
 /* =============================================
