@@ -237,6 +237,34 @@ const GALLERY = [
     categories: ['landscape','people'],
     placeholder: '#8EB5C2'
   },
+   {
+    file: 'gallery-bali-waterfall',
+    titleEN: 'Bali', titleDE: 'Bali',
+    format: 'portrait',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+   {
+    file: 'gallery-madeira sunrise',
+    titleEN: 'Madeira', titleDE: 'Madeira',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+   {
+    file: 'gallery-monkey looking up',
+    titleEN: 'Bali', titleDE: 'Bali',
+    format: 'portrait',
+    categories: ['animals'],
+    placeholder: '#8EB5C2'
+  },
+   {
+    file: 'gallery-penguin on rock',
+    titleEN: 'Galapagos', titleDE: 'Galapagos',
+    format: 'portrait',
+    categories: ['animals'],
+    placeholder: '#8EB5C2'
+  },
 ];
 
 /* =============================================
