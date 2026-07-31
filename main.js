@@ -231,35 +231,35 @@ const GALLERY = [
     placeholder: '#8EB5C2'
   },
    {
-    file: 'gallery-mexico city',
+    file: 'gallery-mexico city.jpg',
     titleEN: 'Mexico', titleDE: 'Mexiko',
     format: 'landscape',
     categories: ['landscape','people'],
     placeholder: '#8EB5C2'
   },
    {
-    file: 'gallery-bali-waterfall',
+    file: 'gallery-bali-waterfall.jpg',
     titleEN: 'Bali', titleDE: 'Bali',
     format: 'portrait',
     categories: ['landscape'],
     placeholder: '#8EB5C2'
   },
    {
-    file: 'gallery-madeira sunrise',
+    file: 'gallery-madeira sunrise.jpg',
     titleEN: 'Madeira', titleDE: 'Madeira',
     format: 'landscape',
     categories: ['landscape'],
     placeholder: '#8EB5C2'
   },
    {
-    file: 'gallery-monkey looking up',
+    file: 'gallery-monkey looking up.jpg',
     titleEN: 'Bali', titleDE: 'Bali',
     format: 'portrait',
     categories: ['animals'],
     placeholder: '#8EB5C2'
   },
    {
-    file: 'gallery-penguin on rock',
+    file: 'gallery-penguin on rock.jpg',
     titleEN: 'Galapagos', titleDE: 'Galapagos',
     format: 'portrait',
     categories: ['animals'],
