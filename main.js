@@ -115,14 +115,14 @@ const GALLERY = [
     file: 'gallery-bangkok old town.jpg',
     titleEN: 'Thailand', titleDE: 'Thailand',
     format: 'landscape',
-    categories: ['urban', 'landscape'],
+    categories: ['urban'],
     placeholder: '#C8A07A'
   },
   {
     file: 'gallery-bangkok old town meets skyline.jpg',
     titleEN: 'Thailand', titleDE: 'Thailand',
     format: 'landscape',
-    categories: ['urban', 'landscape'],
+    categories: ['urban'],
     placeholder: '#C8A07A'
   },
     {
