@@ -265,6 +265,55 @@ const GALLERY = [
     categories: ['animals'],
     placeholder: '#8EB5C2'
   },
+   {
+    file: 'gallery-lake.jpg',
+    titleEN: 'Germany', titleDE: 'Germany',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  }, 
+   {
+    file: 'gallery-koenigssee.jpg',
+    titleEN: 'Germany', titleDE: 'Germany',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  }, 
+   {
+    file: 'gallery-passo giau.jpg',
+    titleEN: 'Italy', titleDE: 'Italy',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+   {
+    file: 'gallery-church.jpg',
+    titleEN: 'Germany', titleDE: 'Germany',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+   {
+    file: 'gallery-Walchensee.jpg',
+    titleEN: 'Germany', titleDE: 'Germany',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+   {
+    file: 'gallery-alps.jpg',
+    titleEN: 'Austria', titleDE: 'Austria',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
+   {
+    file: 'gallery-eibsee.jpg',
+    titleEN: 'Germany', titleDE: 'Germany',
+    format: 'landscape',
+    categories: ['landscape'],
+    placeholder: '#8EB5C2'
+  },
 ];
 
 /* =============================================
