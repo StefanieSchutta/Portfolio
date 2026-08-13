@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background: warm sand #FAF7F2 -->
+  <rect width="512" height="512" rx="110" ry="110" fill="#FAF7F2"/>
+
+  <!-- Phase ring: 4 arcs 83deg each with rounded caps, 7deg gap between.
+       Clockwise from 12 o'clock. Radius 148, stroke 54. -->
+
+  <!-- Menstrual 12 to 3 o'clock: #C4617A mauve-rose -->
+  <path d="M 265.4,108.4 A 148,148 0 0,1 403.5,246.9"
+        fill="none" stroke="#C4617A" stroke-width="54" stroke-linecap="round"/>
+
+  <!-- Follicular 3 to 6 o'clock: #7B9E87 sage green -->
+  <path d="M 403.5,265.1 A 148,148 0 0,1 265.4,403.6"
+        fill="none" stroke="#7B9E87" stroke-width="54" stroke-linecap="round"/>
+
+  <!-- Ovulatory 6 to 9 o'clock: #D4845A warm orange -->
+  <path d="M 246.6,403.6 A 148,148 0 0,1 108.5,265.1"
+        fill="none" stroke="#D4845A" stroke-width="54" stroke-linecap="round"/>
+
+  <!-- Luteal 9 to 12 o'clock: #8B7ABF soft purple -->
+  <path d="M 108.5,246.9 A 148,148 0 0,1 246.6,108.4"
+        fill="none" stroke="#8B7ABF" stroke-width="54" stroke-linecap="round"/>
+</svg>

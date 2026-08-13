@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background: cream #faf8f6 -->
+  <rect width="512" height="512" rx="110" ry="110" fill="#FAF8F6"/>
+
+  <!-- 4-pointed sparkle star in terracotta #a06b5d.
+       Outer tips at radius 140, inner corners at ±42px from center. -->
+  <polygon
+    points="256,116 298,214 396,256 298,298 256,396 214,298 116,256 214,214"
+    fill="#A06B5D"/>
+
+  <!-- Soft centre highlight -->
+  <circle cx="256" cy="256" r="54" fill="#FAF8F6" opacity="0.32"/>
+</svg>
